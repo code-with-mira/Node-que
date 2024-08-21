@@ -7,7 +7,7 @@ const port = process.env.PORT || 4000;
 app.use(express.json());
 app.use(cors());
 const uri =
-  "mongodb+srv://mirasavsaniitsolution:admin@cluster0.fcbx8bk.mongodb.net/quizedemo?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://mirasavsaniitsolution:admin@cluster0.fcbx8bk.mongodb.net/react?retryWrites=true&w=majority&appName=Cluster0";
 // this uri connection string get from driver
 mongoose
   .connect(uri)
@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
 });
 
 
-const User = mongoose.model("quizes", userSchema);
+const User = mongoose.model("samples", userSchema);
 
 
 
